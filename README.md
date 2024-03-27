@@ -20,7 +20,7 @@ We recommend using Poetry, a dependency management and packaging tool for Python
 
 ### Installation
 
-1. Activate the virtual environment provided by Poetry:
+1. In a terminal, activate the virtual environment provided by Poetry:
 
 `$ poetry shell`
 
@@ -73,6 +73,14 @@ import nn.symmequiv as symmequiv
     x = self.layer1(x)
     return x
 ```
+
+4. Define an instance of SymmetricGrpEquivNN, specifying the dimension dim_n:
+
+```python
+model = SymmetricGrpEquivNN(dim_n=5)
+```
+
+5. Proceed to train and test as you would with any PyTorch NN model.
 
 ## Tests
 
