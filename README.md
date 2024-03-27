@@ -38,6 +38,12 @@ We recommend using Poetry, a dependency management and packaging tool for Python
 
 For more detailed information on Poetry, refer to the [official documentation](https://python-poetry.org/docs/basic-usage/).
 
+Note: if you wish to use Jupyter Notebook in this repository, we recommend that you execute
+
+`$ poetry run jupyter notebook`
+
+so that the version of Jupyter Notebook that is installed in your virtual environment is used.
+
 ### Usage
 
 1. You can choose to work on CPU, Apple's MPS or on a GPU (CUDA).
