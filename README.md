@@ -86,7 +86,7 @@ import nn.symmequiv as symmequiv
 model = SymmetricGrpEquivNN(dim_n=5)
 ```
 
-5. Proceed to train and test as you would with any PyTorch NN model.
+5. Proceed to train and test as you would with any other PyTorch NN model.
 
 ## Tests
 
