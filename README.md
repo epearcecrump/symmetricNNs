@@ -43,13 +43,16 @@ For more detailed information on Poetry, refer to the [official documentation](h
 1. You can choose to work on CPU, Apple's MPS or GPU (Cuda).
 Ensure that you have initialized the `device` variable properly for your specific setup and moved the model and input data to the appropriate device if you choose to use GPU acceleration.
 
-`device = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'`
+```python
+device = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
+```
 
 2. Import the necessary modules:
 
 ```python
 import torch.nn as nn
 import nn.symmequiv as symmequiv
+```
 
 3. Define a class using `SymmetricGrpEquivLinear`:
 
@@ -69,6 +72,7 @@ import nn.symmequiv as symmequiv
   def forward(self, x):
     x = self.layer1(x)
     return x
+```
 
 ## Tests
 
