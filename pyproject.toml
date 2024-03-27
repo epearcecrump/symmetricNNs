@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "symmetricnns"
+version = "0.1.0"
+description = ""
+authors = ["Edward Pearce-Crump <e.pearcecrump@googlemail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+torch = "^2.0.1"
+more-itertools = "^10.1.0"
+numpy = "^1.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
