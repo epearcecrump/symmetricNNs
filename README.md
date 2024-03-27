@@ -40,7 +40,7 @@ For more detailed information on Poetry, refer to the [official documentation](h
 
 ### Usage
 
-1. You can choose to work on CPU, Apple's MPS or GPU (Cuda).
+1. You can choose to work on CPU, Apple's MPS or on a GPU (CUDA).
 Ensure that you have initialized the `device` variable properly for your specific setup and moved the model and input data to the appropriate device if you choose to use GPU acceleration.
 
 ```python
