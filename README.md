@@ -1,41 +1,51 @@
 # Connecting Permutation Equivariant Neural Networks and Partition Diagrams
 
-## Description
+This repository contains an implementation based on the research 
+presented in the paper by 
+Pearce-Crump (2023): "Connecting Permutation Equivariant Neural Networks and Partition Diagrams". 
+The core component provided here is the class `SymmetricGrpEquivLayer` within `nn/symmequiv.py`, which enables the creation of linear layer functions 
+that exist in 
+permutation equivariant neural networks where the layers 
+are some tensor power of
+\(\mathbb{R}^n\).
 
-This repo provides a PyTorch implementation of the work that is presented in the paper Pearce-Crump (2023): Connecting Permutation Equivariant Neural Networks and Partition Diagrams.
+## Features
 
-Specifically, it contains the class 
+- PyTorch implementation of `SymmetricGrpEquivLayer` class facilitating the construction of linear layers for permutation equivariant neural networks.
+- Flexible choice between the diagram basis and the orbit basis through the `diag` boolean flag.
 
-nn/symmequiv.py: SymmetricGrpEquivLayer
+## Installation and Usage
 
-that allows you to create any of the linear layer functions 
-that appear in a permutation
-equivariant neural network 
-where the layers are some tensor power of \mathbb{R^n}.
+We recommend using Poetry, a dependency management and packaging tool for Python projects.
 
-The boolean flag diag allows you to choose either the diagram basis or the orbit basis when constructing the linear layers.
+### Installation
 
-## Using Poetry to execute the code
+1. Activate the virtual environment provided by Poetry:
 
-We recommend that you use Poetry, a dependency management and packaging tool in Python.
+`$ poetry shell`
 
-To run the code, execute the following commands:
+2. Install required dependencies specified in `pyproject.toml`:
 
-$ poetry shell (to activate the virtual environment that Poetry provides)
+`$ poetry install`
 
-$ poetry install (to install the required dependencies that are declared in the pyproject.toml file)
+3. Execute the following command to test that your installation has worked:
 
-$ python3 example.py (to see that this has worked)
+`$ python3 example.py`
 
-To exit your new shell/virtual environment, use
+4. To exit the virtual environment, simply use:
 
-$ exit
+`$ exit$
 
-To find out more about Poetry, please go to https://python-poetry.org/docs/basic-usage/
-
+For more detailed information on Poetry, refer to the [official documentation](https://python-poetry.org/docs/basic-usage/).
 
 ## Tests
 
-To execute all tests, first return to the high-level directory symmetricNNs, and then run
+To run all tests, navigate to the root directory of the repository and execute:
 
 `$ python3 -m unittest discover`
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
