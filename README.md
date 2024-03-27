@@ -2,12 +2,16 @@
 
 ## Description
 
-This repo contains the class 
+This repo provides an implementation of the work that is presented in the paper Pearce-Crump (2023): Connecting Permutation Equivariant Neural Networks and Partition Diagrams.
+
+It contains the class 
 
 nn/symmequiv.py: SymmetricGrpEquivLayer
 
-that creates the linear layer functions that appear in a permutation
-equivariant neural network where the layers are some tensor power of R^n.
+that allows you to create any of the linear layer functions 
+that appear in a permutation
+equivariant neural network 
+where the layers are some tensor power of R^n.
 
 The boolean flag diag allows you to choose either the diagram basis or the orbit basis when constructing the linear layers.
 
@@ -27,7 +31,7 @@ To exit your new shell/virtual environment, use
 
 $ exit
 
-To find out more about Poetry, please view https://python-poetry.org/docs/basic-usage/
+To find out more about Poetry, please go to https://python-poetry.org/docs/basic-usage/
 
 
 ## Tests
